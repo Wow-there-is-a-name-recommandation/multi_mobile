@@ -1,0 +1,2 @@
+[console_scripts]
+initial_cmd = cmd_initial.initial_cmd:main

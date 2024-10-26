@@ -1,0 +1,9 @@
+source;share/cmd_initial/hook/pythonpath.ps1
+source;share/cmd_initial/hook/pythonpath.dsv
+source;share/cmd_initial/hook/pythonpath.sh
+source;share/cmd_initial/hook/ament_prefix_path.ps1
+source;share/cmd_initial/hook/ament_prefix_path.dsv
+source;share/cmd_initial/hook/ament_prefix_path.sh
+source;../../build/cmd_initial/share/cmd_initial/hook/pythonpath_develop.ps1
+source;../../build/cmd_initial/share/cmd_initial/hook/pythonpath_develop.dsv
+source;../../build/cmd_initial/share/cmd_initial/hook/pythonpath_develop.sh

@@ -1,0 +1,30 @@
+[0.695s] Invoking command in '/home/jo/mobile_test/build/turtlebot3': PYTHONPATH=/home/jo/mobile_test/build/turtlebot3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jo/mobile_test/install/turtlebot3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jo/mobile_test/build/turtlebot3/build --no-deps symlink_data
+[0.801s] /home/jo/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:260: UserWarning: Unknown distribution option: 'tests_require'
+[0.801s]   warnings.warn(msg)
+[0.917s] running develop
+[0.917s] /home/jo/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[0.917s] !!
+[0.917s] 
+[0.917s]         ********************************************************************************
+[0.917s]         Please avoid running ``setup.py`` and ``easy_install``.
+[0.917s]         Instead, use pypa/build, pypa/installer or other
+[0.918s]         standards-based tools.
+[0.918s] 
+[0.918s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[0.918s]         ********************************************************************************
+[0.918s] 
+[0.918s] !!
+[0.918s]   easy_install.initialize_options(self)
+[1.063s] running egg_info
+[1.072s] writing turtlebot3.egg-info/PKG-INFO
+[1.073s] writing dependency_links to turtlebot3.egg-info/dependency_links.txt
+[1.073s] writing requirements to turtlebot3.egg-info/requires.txt
+[1.073s] writing top-level names to turtlebot3.egg-info/top_level.txt
+[1.094s] reading manifest file 'turtlebot3.egg-info/SOURCES.txt'
+[1.095s] writing manifest file 'turtlebot3.egg-info/SOURCES.txt'
+[1.105s] running build_ext
+[1.106s] Creating /home/jo/mobile_test/install/turtlebot3/lib/python3.10/site-packages/turtlebot3.egg-link (link to .)
+[1.106s] 
+[1.106s] Installed /home/jo/mobile_test/build/turtlebot3
+[1.106s] running symlink_data
+[1.134s] Invoked command in '/home/jo/mobile_test/build/turtlebot3' returned '0': PYTHONPATH=/home/jo/mobile_test/build/turtlebot3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jo/mobile_test/install/turtlebot3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jo/mobile_test/build/turtlebot3/build --no-deps symlink_data

@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+cmd_initial/__init__.py
+cmd_initial/initial_cmd.py
+cmd_initial.egg-info/PKG-INFO
+cmd_initial.egg-info/SOURCES.txt
+cmd_initial.egg-info/dependency_links.txt
+cmd_initial.egg-info/entry_points.txt
+cmd_initial.egg-info/requires.txt
+cmd_initial.egg-info/top_level.txt
+cmd_initial.egg-info/zip-safe
+resource/cmd_initial

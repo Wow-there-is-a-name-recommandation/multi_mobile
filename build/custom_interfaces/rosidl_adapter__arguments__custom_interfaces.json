@@ -1,0 +1,6 @@
+{
+  "package_name": "custom_interfaces",
+  "non_idl_tuples": [
+    "/home/jo/mobile_test/src/custom_interfaces:msg/RobotState.msg"
+  ]
+}

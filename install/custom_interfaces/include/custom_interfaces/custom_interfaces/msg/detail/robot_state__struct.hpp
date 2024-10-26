@@ -1,0 +1,1 @@
+/home/jo/mobile_test/build/custom_interfaces/rosidl_generator_cpp/custom_interfaces/msg/detail/robot_state__struct.hpp

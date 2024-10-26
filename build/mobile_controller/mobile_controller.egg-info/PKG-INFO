@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: mobile_controller
+Version: 0.0.0
+Summary: Creat velocity control for Multi mobile
+Maintainer: jo
+Maintainer-email: jo000320@kw.ac.kr
+License: Apache-2.0
+Requires-Dist: setuptools

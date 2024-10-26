@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating mobile_controller.egg-info
+writing mobile_controller.egg-info/PKG-INFO
+writing dependency_links to mobile_controller.egg-info/dependency_links.txt
+writing entry points to mobile_controller.egg-info/entry_points.txt
+writing requirements to mobile_controller.egg-info/requires.txt
+writing top-level names to mobile_controller.egg-info/top_level.txt
+writing manifest file 'mobile_controller.egg-info/SOURCES.txt'
+reading manifest file 'mobile_controller.egg-info/SOURCES.txt'
+writing manifest file 'mobile_controller.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/jo/mobile_test/install/mobile_controller/lib/python3.10/site-packages/mobile-controller.egg-link (link to .)
+Installing talker script to /home/jo/mobile_test/install/mobile_controller/lib/mobile_controller
+
+Installed /home/jo/mobile_test/build/mobile_controller
+running symlink_data
+creating /home/jo/mobile_test/install/mobile_controller/share/ament_index
+creating /home/jo/mobile_test/install/mobile_controller/share/ament_index/resource_index
+creating /home/jo/mobile_test/install/mobile_controller/share/ament_index/resource_index/packages
+symbolically linking /home/jo/mobile_test/build/mobile_controller/resource/mobile_controller -> /home/jo/mobile_test/install/mobile_controller/share/ament_index/resource_index/packages
+symbolically linking /home/jo/mobile_test/build/mobile_controller/package.xml -> /home/jo/mobile_test/install/mobile_controller/share/mobile_controller

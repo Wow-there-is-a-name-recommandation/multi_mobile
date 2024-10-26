@@ -1,0 +1,3 @@
+[console_scripts]
+consensus_controller = mobile_controller.consensus_controller:main
+state_communicate = mobile_controller.state_communicate:main

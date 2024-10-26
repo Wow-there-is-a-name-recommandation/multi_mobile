@@ -1,0 +1,1 @@
+/home/jo/mobile_test/build/custom_interfaces/rosidl_typesupport_fastrtps_c/custom_interfaces/msg/detail/robot_state__rosidl_typesupport_fastrtps_c.h
