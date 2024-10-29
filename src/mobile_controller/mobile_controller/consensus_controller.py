@@ -5,6 +5,7 @@ from rclpy.executors import MultiThreadedExecutor
 from geometry_msgs.msg import Twist
 from custom_interfaces.msg import RobotState
 import ast
+import math
 
 class MobileController(Node):
 
@@ -54,7 +55,8 @@ class MobileController(Node):
 
         self.publish_target()  # 타겟 퍼블리싱 함수 호출
 
-        self.timer = self.create_timer(1.0, self.control_loop)  # 100ms마다 제어 입력 계산
+        self.timer_laplacian = self.create_timer(1.0, self.control_loop)  # 100ms마다 제어 입력 계산
+        self.timer_target = self.create_timer(0.1, self.publish_target)  # 100ms마다 통신
 
     def odom_callback(self, msg):
         # 자신의 위치 정보를 업데이트
@@ -89,6 +91,7 @@ class MobileController(Node):
         target_input_y = 0.0
         target_input_theta = 0.0
 
+
         for robot_id, neighbor_target in self.neighbor_targets.items():
             neighbor_x, neighbor_y, neighbor_theta = neighbor_target
             target_input_x += (neighbor_x - self.target[0])
@@ -97,24 +100,36 @@ class MobileController(Node):
 
         #self.get_logger().info(f'Target Change: {target_input_x}, {target_input_y}, {target_input_theta}')
 
-        self.target[0] += target_input_x + self.compensate_x
-        self.target[1] += target_input_y + self.compensate_y
-        self.target[2] += target_input_theta + self.compensate_theta
+        self.target[0] += 0.3*target_input_x #+ self.compensate_x
+        self.target[1] += 0.3*target_input_y #+ self.compensate_y
+        self.target[2] += 0.3*target_input_theta #+ self.compensate_theta
         
         self.compensate_x += -4*self.compensate_x-target_input_x
         self.compensate_y = -4*self.compensate_y-target_input_y
         self.compensate_theta = -4*self.compensate_theta-target_input_theta
 
-        self.publish_target()
-
         # 제어 입력을 적용하여 로봇의 속도를 업데이트
         # twist는 로봇 기준 속도 입력 메시지 생성
-        #cmd_vel = Twist()
-        #cmd_vel.linear.x = (control_input_x**2 + control_input_y**2)**(1/2)  # 상태 차이에 비례하여 속도 명령
-        #cmd_vel.angular.z = control_input_theta
+        cmd_vel = Twist()
+        # 목표 방향 계산 (타겟 방향)
+        target_direction = math.atan2(self.target[1] - self.state[1], self.target[0] - self.state[0])
+    
+        # 목표 방향과 현재 방향 간의 각도 차이 계산
+        angle_to_target = target_direction - self.state[2]
+        angle_to_target = math.atan2(math.sin(angle_to_target), math.cos(angle_to_target))  # 각도 정규화
 
-        #self.cmd_vel_publisher.publish(cmd_vel)
-        #self.get_logger().info(f'Publishing control input: x={cmd_vel.linear.x}, theta={cmd_vel.angular.z}')
+        # 직진 거리 계산
+        distance_to_target = math.sqrt((self.target[0] - self.state[0]) ** 2 + (self.target[1] - self.state[1]) ** 2)
+
+        # 직진 속도와 각속도 설정
+        linear_velocity = min(1.0, distance_to_target)  # 최대 속도 제한 (예: 1.0)
+        angular_velocity = angle_to_target * 2.0  # 각속도 조정 (예: 2.0)
+
+        cmd_vel.linear.x = linear_velocity  # 상태 차이에 비례하여 속도 명령
+        cmd_vel.angular.z = angular_velocity
+
+        self.cmd_vel_publisher.publish(cmd_vel)
+        self.get_logger().info(f'Publishing control input: x={cmd_vel.linear.x}, theta={cmd_vel.angular.z}')
 
 
 def main(args=None):

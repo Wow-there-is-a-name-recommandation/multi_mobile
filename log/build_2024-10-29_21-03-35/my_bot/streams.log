@@ -1,0 +1,30 @@
+[0.565s] Invoking command in '/home/jo/mobile_test/build/my_bot': PYTHONPATH=/home/jo/mobile_test/build/my_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jo/mobile_test/install/my_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jo/mobile_test/build/my_bot/build --no-deps symlink_data
+[0.685s] /home/jo/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:260: UserWarning: Unknown distribution option: 'tests_require'
+[0.685s]   warnings.warn(msg)
+[0.803s] running develop
+[0.804s] /home/jo/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[0.804s] !!
+[0.804s] 
+[0.804s]         ********************************************************************************
+[0.804s]         Please avoid running ``setup.py`` and ``easy_install``.
+[0.804s]         Instead, use pypa/build, pypa/installer or other
+[0.804s]         standards-based tools.
+[0.804s] 
+[0.804s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[0.804s]         ********************************************************************************
+[0.804s] 
+[0.804s] !!
+[0.804s]   easy_install.initialize_options(self)
+[0.957s] running egg_info
+[0.967s] writing my_bot.egg-info/PKG-INFO
+[0.967s] writing dependency_links to my_bot.egg-info/dependency_links.txt
+[0.968s] writing requirements to my_bot.egg-info/requires.txt
+[0.968s] writing top-level names to my_bot.egg-info/top_level.txt
+[0.979s] reading manifest file 'my_bot.egg-info/SOURCES.txt'
+[0.980s] writing manifest file 'my_bot.egg-info/SOURCES.txt'
+[0.992s] running build_ext
+[1.003s] Creating /home/jo/mobile_test/install/my_bot/lib/python3.10/site-packages/my-bot.egg-link (link to .)
+[1.004s] 
+[1.004s] Installed /home/jo/mobile_test/build/my_bot
+[1.004s] running symlink_data
+[1.035s] Invoked command in '/home/jo/mobile_test/build/my_bot' returned '0': PYTHONPATH=/home/jo/mobile_test/build/my_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jo/mobile_test/install/my_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jo/mobile_test/build/my_bot/build --no-deps symlink_data
