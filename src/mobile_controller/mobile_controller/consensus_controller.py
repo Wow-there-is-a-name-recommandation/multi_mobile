@@ -117,7 +117,7 @@ class MobileController(Node):
     
         # 목표 방향과 현재 방향 간의 각도 차이 계산
         angle_to_target = target_direction - self.state[2]
-        #angle_to_target = math.atan2(math.sin(angle_to_target), math.cos(angle_to_target))  # 각도 정규화
+        angle_to_target = math.atan2(math.sin(angle_to_target), math.cos(angle_to_target))  # 각도 정규화
 
         # 직진 거리 계산
         distance_to_target = math.sqrt((self.target[0] - self.state[0]) ** 2 + (self.target[1] - self.state[1]) ** 2)
