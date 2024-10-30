@@ -80,7 +80,7 @@ class MobileController(Node):
         target_msg.robot_id = self.robot_id
         target_msg.state = self.target
         self.target_publisher.publish(target_msg)
-        self.get_logger().info(f'Published target: {self.target}')
+        #self.get_logger().info(f'Published target: {self.target}')
 
     def control_loop(self):
         if len(self.neighbor_targets) == 0:
@@ -99,11 +99,11 @@ class MobileController(Node):
             target_input_y += (neighbor_y - self.target[1])
             target_input_theta += (neighbor_theta - self.target[2])
 
-        #self.get_logger().info(f'Target Change: {target_input_x}, {target_input_y}, {target_input_theta}')
+        self.get_logger().info(f'Target Change: {target_input_x}, {target_input_y}, {target_input_theta}')
 
-        #self.target[0] += 0.3*target_input_x #+ self.compensate_x
-        #self.target[1] += 0.3*target_input_y #+ self.compensate_y
-        #self.target[2] += 0.3*target_input_theta #+ self.compensate_theta
+        self.target[0] += 0.3*target_input_x #+ self.compensate_x
+        self.target[1] += 0.3*target_input_y #+ self.compensate_y
+        self.target[2] += 0.3*target_input_theta #+ self.compensate_theta
         
         self.compensate_x += -4*self.compensate_x-target_input_x
         self.compensate_y = -4*self.compensate_y-target_input_y
@@ -126,11 +126,16 @@ class MobileController(Node):
         linear_velocity = distance_to_target  # 최대 속도 제한 (예: 1.0)
         angular_velocity = angle_to_target
 
-        cmd_vel.linear.x = min(1.5, linear_velocity * (np.exp(1 * distance_to_target ** 2))-1)  # 상태 차이에 비례하여 속도 명령
-        cmd_vel.angular.z = angular_velocity * (np.exp(1 * angle_to_target ** 2)-1)
+        if(distance_to_target<=1):
+            cmd_vel.linear.x = 0.0
+            cmd_vel.angular.z = 0.0
+        else:
+            cmd_vel.linear.x = min(0.5, linear_velocity * (np.exp(1 * distance_to_target ** 2))-1)  # 상태 차이에 비례하여 속도 명령
+            cmd_vel.angular.z = min(2.0, angular_velocity * (np.exp(1 * angle_to_target ** 2)-1))
 
         self.cmd_vel_publisher.publish(cmd_vel)
-        self.get_logger().info(f'Publishing control input: x={cmd_vel.linear.x}, theta={cmd_vel.angular.z}')
+        #self.get_logger().info(f'Publishing control input: x={cmd_vel.linear.x}, theta={cmd_vel.angular.z}')
+        #self.get_logger().info(f'Publishing control x={self.state[0]}, y={self.state[1]}, dis={target_direction}')
 
 
 def main(args=None):
