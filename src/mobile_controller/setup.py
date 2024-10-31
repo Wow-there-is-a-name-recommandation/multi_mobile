@@ -22,6 +22,7 @@ setup(
         'console_scripts': [
             'consensus_controller = mobile_controller.consensus_controller:main',
             'state_communicate = mobile_controller.state_communicate:main',
+            'laplacian_algorithm = mobile_controller.laplacian_algorithm:main',
         ],
     },
 )
