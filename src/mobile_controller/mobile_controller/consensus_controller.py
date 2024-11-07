@@ -65,7 +65,7 @@ class MobileController(Node):
         # 이웃 로봇들의 타겟 정보를 robot_id를 기준으로 저장
         if (msg.robot_id == self.robot_id):
             self.target = msg.state
-        self.get_logger().info(f'Received target: {msg.state}')
+        #self.get_logger().info(f'Received target: {msg.state}')
 
     def control_loop(self):
 
@@ -76,22 +76,22 @@ class MobileController(Node):
         target_direction = math.atan2(self.target[1] - self.state[1], self.target[0] - self.state[0])
     
         # 목표 방향과 현재 방향 간의 각도 차이 계산
-        angle_to_target = target_direction - self.state[2]
-        angle_to_target = math.atan2(math.sin(angle_to_target), math.cos(angle_to_target))  # 각도 정규화
+        #angle_to_target = target_direction - self.state[2]
+        #angle_to_target = math.atan2(math.sin(angle_to_target), math.cos(angle_to_target))  # 각도 정규화
 
         # 직진 거리 계산
         distance_to_target = math.sqrt((self.target[0] - self.state[0]) ** 2 + (self.target[1] - self.state[1]) ** 2)
 
         # 직진 속도와 각속도 설정
         linear_velocity = distance_to_target  # 최대 속도 제한 (예: 1.0)
-        angular_velocity = angle_to_target
+        angular_velocity = target_direction #angle_to_target
 
-        if(distance_to_target<=1):
+        if(distance_to_target<=0.1):
             cmd_vel.linear.x = 0.0
             cmd_vel.angular.z = 0.0
         else:
-            cmd_vel.linear.x = min(0.5, linear_velocity * abs(target_direction-2) * (np.exp(1 * (distance_to_target - 2) ** 2)))  # 상태 차이에 비례하여 속도 명령
-            cmd_vel.angular.z = min(2.0, angular_velocity * abs(angle_to_target) * (np.exp(1 * (angle_to_target) ** 2)))
+            cmd_vel.linear.x = min(0.5, linear_velocity * abs(distance_to_target) * (np.exp(1 * (distance_to_target) ** 2)))  # 상태 차이에 비례하여 속도 명령
+            cmd_vel.angular.z = min(2.0, angular_velocity )#* abs(angle_to_target) * (np.exp(1 * (angle_to_target) ** 2)))
 
         self.cmd_vel_publisher.publish(cmd_vel)
         #self.get_logger().info(f'Publishing control input: x={cmd_vel.linear.x}, theta={cmd_vel.angular.z}')

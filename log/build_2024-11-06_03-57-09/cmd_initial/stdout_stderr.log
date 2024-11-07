@@ -1,0 +1,50 @@
+/home/jo/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:260: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running develop
+/home/jo/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` and ``easy_install``.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://github.com/pypa/setuptools/issues/917 for details.
+        ********************************************************************************
+
+!!
+  easy_install.initialize_options(self)
+Removing /home/jo/mobile_test/install/cmd_initial/lib/python3.10/site-packages/cmd-initial.egg-link (link to .)
+/home/jo/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:260: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running egg_info
+writing ../../build/cmd_initial/cmd_initial.egg-info/PKG-INFO
+writing dependency_links to ../../build/cmd_initial/cmd_initial.egg-info/dependency_links.txt
+writing entry points to ../../build/cmd_initial/cmd_initial.egg-info/entry_points.txt
+writing requirements to ../../build/cmd_initial/cmd_initial.egg-info/requires.txt
+writing top-level names to ../../build/cmd_initial/cmd_initial.egg-info/top_level.txt
+reading manifest file '../../build/cmd_initial/cmd_initial.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/cmd_initial/cmd_initial.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/jo/mobile_test/build/cmd_initial/build
+creating /home/jo/mobile_test/build/cmd_initial/build/lib
+creating /home/jo/mobile_test/build/cmd_initial/build/lib/cmd_initial
+copying cmd_initial/initial_cmd.py -> /home/jo/mobile_test/build/cmd_initial/build/lib/cmd_initial
+copying cmd_initial/__init__.py -> /home/jo/mobile_test/build/cmd_initial/build/lib/cmd_initial
+running install
+running install_lib
+creating /home/jo/mobile_test/install/cmd_initial/lib/python3.10/site-packages/cmd_initial
+copying /home/jo/mobile_test/build/cmd_initial/build/lib/cmd_initial/initial_cmd.py -> /home/jo/mobile_test/install/cmd_initial/lib/python3.10/site-packages/cmd_initial
+copying /home/jo/mobile_test/build/cmd_initial/build/lib/cmd_initial/__init__.py -> /home/jo/mobile_test/install/cmd_initial/lib/python3.10/site-packages/cmd_initial
+byte-compiling /home/jo/mobile_test/install/cmd_initial/lib/python3.10/site-packages/cmd_initial/initial_cmd.py to initial_cmd.cpython-310.pyc
+byte-compiling /home/jo/mobile_test/install/cmd_initial/lib/python3.10/site-packages/cmd_initial/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying resource/cmd_initial -> /home/jo/mobile_test/install/cmd_initial/share/ament_index/resource_index/packages
+copying package.xml -> /home/jo/mobile_test/install/cmd_initial/share/cmd_initial
+running install_egg_info
+Copying ../../build/cmd_initial/cmd_initial.egg-info to /home/jo/mobile_test/install/cmd_initial/lib/python3.10/site-packages/cmd_initial-0.0.0-py3.10.egg-info
+running install_scripts
+Installing initial_cmd script to /home/jo/mobile_test/install/cmd_initial/lib/cmd_initial
+writing list of installed files to '/home/jo/mobile_test/build/cmd_initial/install.log'

@@ -1,6 +1,12 @@
 package.xml
 setup.cfg
 setup.py
+../../build/my_bot/my_bot.egg-info/PKG-INFO
+../../build/my_bot/my_bot.egg-info/SOURCES.txt
+../../build/my_bot/my_bot.egg-info/dependency_links.txt
+../../build/my_bot/my_bot.egg-info/requires.txt
+../../build/my_bot/my_bot.egg-info/top_level.txt
+../../build/my_bot/my_bot.egg-info/zip-safe
 launch/controller.launch.py
 launch/multi_turtle3.launch.py
 launch/rsp.launch.py

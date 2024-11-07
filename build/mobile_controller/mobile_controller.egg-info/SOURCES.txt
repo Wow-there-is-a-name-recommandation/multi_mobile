@@ -1,6 +1,13 @@
 package.xml
 setup.cfg
 setup.py
+../../build/mobile_controller/mobile_controller.egg-info/PKG-INFO
+../../build/mobile_controller/mobile_controller.egg-info/SOURCES.txt
+../../build/mobile_controller/mobile_controller.egg-info/dependency_links.txt
+../../build/mobile_controller/mobile_controller.egg-info/entry_points.txt
+../../build/mobile_controller/mobile_controller.egg-info/requires.txt
+../../build/mobile_controller/mobile_controller.egg-info/top_level.txt
+../../build/mobile_controller/mobile_controller.egg-info/zip-safe
 mobile_controller/__init__.py
 mobile_controller/consensus_controller.py
 mobile_controller/laplacian_algorithm.py

@@ -1,0 +1,54 @@
+[0.886s] Invoking command in '/home/jo/mobile_test/build/cmd_initial': PYTHONPATH=/home/jo/mobile_test/build/cmd_initial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jo/mobile_test/install/cmd_initial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/jo/mobile_test/build/cmd_initial/build
+[0.998s] /home/jo/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:260: UserWarning: Unknown distribution option: 'tests_require'
+[0.998s]   warnings.warn(msg)
+[1.102s] running develop
+[1.102s] /home/jo/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[1.102s] !!
+[1.102s] 
+[1.102s]         ********************************************************************************
+[1.102s]         Please avoid running ``setup.py`` and ``easy_install``.
+[1.102s]         Instead, use pypa/build, pypa/installer or other
+[1.102s]         standards-based tools.
+[1.102s] 
+[1.103s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[1.103s]         ********************************************************************************
+[1.103s] 
+[1.103s] !!
+[1.103s]   easy_install.initialize_options(self)
+[1.253s] Removing /home/jo/mobile_test/install/cmd_initial/lib/python3.10/site-packages/cmd-initial.egg-link (link to .)
+[1.282s] Invoked command in '/home/jo/mobile_test/build/cmd_initial' returned '0': PYTHONPATH=/home/jo/mobile_test/build/cmd_initial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jo/mobile_test/install/cmd_initial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/jo/mobile_test/build/cmd_initial/build
+[1.283s] Invoking command in '/home/jo/mobile_test/src/cmd_initial': PYTHONPATH=/home/jo/mobile_test/build/cmd_initial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jo/mobile_test/install/cmd_initial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cmd_initial build --build-base /home/jo/mobile_test/build/cmd_initial/build install --record /home/jo/mobile_test/build/cmd_initial/install.log --single-version-externally-managed install_data --force
+[1.390s] /home/jo/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:260: UserWarning: Unknown distribution option: 'tests_require'
+[1.390s]   warnings.warn(msg)
+[1.455s] running egg_info
+[1.470s] writing ../../build/cmd_initial/cmd_initial.egg-info/PKG-INFO
+[1.470s] writing dependency_links to ../../build/cmd_initial/cmd_initial.egg-info/dependency_links.txt
+[1.470s] writing entry points to ../../build/cmd_initial/cmd_initial.egg-info/entry_points.txt
+[1.470s] writing requirements to ../../build/cmd_initial/cmd_initial.egg-info/requires.txt
+[1.470s] writing top-level names to ../../build/cmd_initial/cmd_initial.egg-info/top_level.txt
+[1.493s] reading manifest file '../../build/cmd_initial/cmd_initial.egg-info/SOURCES.txt'
+[1.493s] adding license file 'LICENSE'
+[1.494s] writing manifest file '../../build/cmd_initial/cmd_initial.egg-info/SOURCES.txt'
+[1.494s] running build
+[1.494s] running build_py
+[1.494s] creating /home/jo/mobile_test/build/cmd_initial/build
+[1.494s] creating /home/jo/mobile_test/build/cmd_initial/build/lib
+[1.495s] creating /home/jo/mobile_test/build/cmd_initial/build/lib/cmd_initial
+[1.495s] copying cmd_initial/initial_cmd.py -> /home/jo/mobile_test/build/cmd_initial/build/lib/cmd_initial
+[1.495s] copying cmd_initial/__init__.py -> /home/jo/mobile_test/build/cmd_initial/build/lib/cmd_initial
+[1.495s] running install
+[1.498s] running install_lib
+[1.509s] creating /home/jo/mobile_test/install/cmd_initial/lib/python3.10/site-packages/cmd_initial
+[1.509s] copying /home/jo/mobile_test/build/cmd_initial/build/lib/cmd_initial/initial_cmd.py -> /home/jo/mobile_test/install/cmd_initial/lib/python3.10/site-packages/cmd_initial
+[1.509s] copying /home/jo/mobile_test/build/cmd_initial/build/lib/cmd_initial/__init__.py -> /home/jo/mobile_test/install/cmd_initial/lib/python3.10/site-packages/cmd_initial
+[1.509s] byte-compiling /home/jo/mobile_test/install/cmd_initial/lib/python3.10/site-packages/cmd_initial/initial_cmd.py to initial_cmd.cpython-310.pyc
+[1.510s] byte-compiling /home/jo/mobile_test/install/cmd_initial/lib/python3.10/site-packages/cmd_initial/__init__.py to __init__.cpython-310.pyc
+[1.510s] running install_data
+[1.510s] copying resource/cmd_initial -> /home/jo/mobile_test/install/cmd_initial/share/ament_index/resource_index/packages
+[1.510s] copying package.xml -> /home/jo/mobile_test/install/cmd_initial/share/cmd_initial
+[1.510s] running install_egg_info
+[1.522s] Copying ../../build/cmd_initial/cmd_initial.egg-info to /home/jo/mobile_test/install/cmd_initial/lib/python3.10/site-packages/cmd_initial-0.0.0-py3.10.egg-info
+[1.523s] running install_scripts
+[1.618s] Installing initial_cmd script to /home/jo/mobile_test/install/cmd_initial/lib/cmd_initial
+[1.618s] writing list of installed files to '/home/jo/mobile_test/build/cmd_initial/install.log'
+[1.661s] Invoked command in '/home/jo/mobile_test/src/cmd_initial' returned '0': PYTHONPATH=/home/jo/mobile_test/build/cmd_initial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jo/mobile_test/install/cmd_initial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/cmd_initial build --build-base /home/jo/mobile_test/build/cmd_initial/build install --record /home/jo/mobile_test/build/cmd_initial/install.log --single-version-externally-managed install_data --force

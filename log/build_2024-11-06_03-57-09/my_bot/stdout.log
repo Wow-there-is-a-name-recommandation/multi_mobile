@@ -1,0 +1,22 @@
+running develop
+Removing /home/jo/mobile_test/install/my_bot/lib/python3.10/site-packages/my-bot.egg-link (link to .)
+running egg_info
+writing ../../build/my_bot/my_bot.egg-info/PKG-INFO
+writing dependency_links to ../../build/my_bot/my_bot.egg-info/dependency_links.txt
+writing requirements to ../../build/my_bot/my_bot.egg-info/requires.txt
+writing top-level names to ../../build/my_bot/my_bot.egg-info/top_level.txt
+reading manifest file '../../build/my_bot/my_bot.egg-info/SOURCES.txt'
+adding license file 'LICENSE.md'
+writing manifest file '../../build/my_bot/my_bot.egg-info/SOURCES.txt'
+running build
+running install
+running install_data
+copying resource/my_bot -> /home/jo/mobile_test/install/my_bot/share/ament_index/resource_index/packages
+copying package.xml -> /home/jo/mobile_test/install/my_bot/share/my_bot
+copying launch/controller.launch.py -> /home/jo/mobile_test/install/my_bot/share/my_bot/launch
+copying launch/rsp.launch.py -> /home/jo/mobile_test/install/my_bot/share/my_bot/launch
+copying launch/multi_turtle3.launch.py -> /home/jo/mobile_test/install/my_bot/share/my_bot/launch
+running install_egg_info
+Copying ../../build/my_bot/my_bot.egg-info to /home/jo/mobile_test/install/my_bot/lib/python3.10/site-packages/my_bot-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/jo/mobile_test/build/my_bot/install.log'

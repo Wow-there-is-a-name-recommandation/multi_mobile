@@ -1,6 +1,13 @@
 package.xml
 setup.cfg
 setup.py
+../../build/cmd_initial/cmd_initial.egg-info/PKG-INFO
+../../build/cmd_initial/cmd_initial.egg-info/SOURCES.txt
+../../build/cmd_initial/cmd_initial.egg-info/dependency_links.txt
+../../build/cmd_initial/cmd_initial.egg-info/entry_points.txt
+../../build/cmd_initial/cmd_initial.egg-info/requires.txt
+../../build/cmd_initial/cmd_initial.egg-info/top_level.txt
+../../build/cmd_initial/cmd_initial.egg-info/zip-safe
 cmd_initial/__init__.py
 cmd_initial/initial_cmd.py
 cmd_initial.egg-info/PKG-INFO

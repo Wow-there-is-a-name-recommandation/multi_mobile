@@ -1,0 +1,35 @@
+[0.582s] Invoking command in '/home/jo/mobile_test/build/my_bot': AMENT_PREFIX_PATH=/home/jo/mobile_test/install/turtlebot3_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jo/mobile_test/install/turtlebot3_description PYTHONPATH=/home/jo/mobile_test/build/my_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jo/mobile_test/install/my_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jo/mobile_test/build/my_bot/build --no-deps symlink_data --force
+[0.690s] /home/jo/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:260: UserWarning: Unknown distribution option: 'tests_require'
+[0.690s]   warnings.warn(msg)
+[0.816s] running develop
+[0.816s] /home/jo/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[0.816s] !!
+[0.816s] 
+[0.816s]         ********************************************************************************
+[0.816s]         Please avoid running ``setup.py`` and ``easy_install``.
+[0.816s]         Instead, use pypa/build, pypa/installer or other
+[0.816s]         standards-based tools.
+[0.816s] 
+[0.816s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[0.817s]         ********************************************************************************
+[0.817s] 
+[0.817s] !!
+[0.817s]   easy_install.initialize_options(self)
+[0.999s] running egg_info
+[1.013s] writing my_bot.egg-info/PKG-INFO
+[1.014s] writing dependency_links to my_bot.egg-info/dependency_links.txt
+[1.014s] writing requirements to my_bot.egg-info/requires.txt
+[1.014s] writing top-level names to my_bot.egg-info/top_level.txt
+[1.031s] reading manifest file 'my_bot.egg-info/SOURCES.txt'
+[1.033s] writing manifest file 'my_bot.egg-info/SOURCES.txt'
+[1.052s] running build_ext
+[1.067s] Creating /home/jo/mobile_test/install/my_bot/lib/python3.10/site-packages/my-bot.egg-link (link to .)
+[1.067s] 
+[1.067s] Installed /home/jo/mobile_test/build/my_bot
+[1.068s] running symlink_data
+[1.068s] symbolically linking /home/jo/mobile_test/build/my_bot/resource/my_bot -> /home/jo/mobile_test/install/my_bot/share/ament_index/resource_index/packages
+[1.068s] symbolically linking /home/jo/mobile_test/build/my_bot/package.xml -> /home/jo/mobile_test/install/my_bot/share/my_bot
+[1.068s] symbolically linking /home/jo/mobile_test/build/my_bot/launch/controller.launch.py -> /home/jo/mobile_test/install/my_bot/share/my_bot/launch
+[1.068s] symbolically linking /home/jo/mobile_test/build/my_bot/launch/rsp.launch.py -> /home/jo/mobile_test/install/my_bot/share/my_bot/launch
+[1.068s] symbolically linking /home/jo/mobile_test/build/my_bot/launch/multi_turtle3.launch.py -> /home/jo/mobile_test/install/my_bot/share/my_bot/launch
+[1.137s] Invoked command in '/home/jo/mobile_test/build/my_bot' returned '0': AMENT_PREFIX_PATH=/home/jo/mobile_test/install/turtlebot3_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jo/mobile_test/install/turtlebot3_description PYTHONPATH=/home/jo/mobile_test/build/my_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jo/mobile_test/install/my_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jo/mobile_test/build/my_bot/build --no-deps symlink_data --force

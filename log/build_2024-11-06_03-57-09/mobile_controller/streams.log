@@ -1,0 +1,62 @@
+[0.565s] Invoking command in '/home/jo/mobile_test/build/mobile_controller': AMENT_PREFIX_PATH=/home/jo/mobile_test/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jo/mobile_test/install/custom_interfaces LD_LIBRARY_PATH=/home/jo/mobile_test/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jo/mobile_test/build/mobile_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jo/mobile_test/install/mobile_controller/lib/python3.10/site-packages:/home/jo/mobile_test/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/jo/mobile_test/build/mobile_controller/build
+[0.674s] /home/jo/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:260: UserWarning: Unknown distribution option: 'tests_require'
+[0.674s]   warnings.warn(msg)
+[0.774s] running develop
+[0.774s] /home/jo/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[0.774s] !!
+[0.774s] 
+[0.775s]         ********************************************************************************
+[0.775s]         Please avoid running ``setup.py`` and ``easy_install``.
+[0.775s]         Instead, use pypa/build, pypa/installer or other
+[0.775s]         standards-based tools.
+[0.775s] 
+[0.775s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[0.775s]         ********************************************************************************
+[0.775s] 
+[0.775s] !!
+[0.775s]   easy_install.initialize_options(self)
+[0.912s] Removing /home/jo/mobile_test/install/mobile_controller/lib/python3.10/site-packages/mobile-controller.egg-link (link to .)
+[0.939s] Invoked command in '/home/jo/mobile_test/build/mobile_controller' returned '0': AMENT_PREFIX_PATH=/home/jo/mobile_test/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jo/mobile_test/install/custom_interfaces LD_LIBRARY_PATH=/home/jo/mobile_test/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jo/mobile_test/build/mobile_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jo/mobile_test/install/mobile_controller/lib/python3.10/site-packages:/home/jo/mobile_test/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/jo/mobile_test/build/mobile_controller/build
+[0.941s] Invoking command in '/home/jo/mobile_test/src/mobile_controller': AMENT_PREFIX_PATH=/home/jo/mobile_test/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jo/mobile_test/install/custom_interfaces LD_LIBRARY_PATH=/home/jo/mobile_test/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jo/mobile_test/build/mobile_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jo/mobile_test/install/mobile_controller/lib/python3.10/site-packages:/home/jo/mobile_test/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/mobile_controller build --build-base /home/jo/mobile_test/build/mobile_controller/build install --record /home/jo/mobile_test/build/mobile_controller/install.log --single-version-externally-managed install_data --force
+[1.041s] /home/jo/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:260: UserWarning: Unknown distribution option: 'tests_require'
+[1.041s]   warnings.warn(msg)
+[1.100s] running egg_info
+[1.109s] writing ../../build/mobile_controller/mobile_controller.egg-info/PKG-INFO
+[1.109s] writing dependency_links to ../../build/mobile_controller/mobile_controller.egg-info/dependency_links.txt
+[1.109s] writing entry points to ../../build/mobile_controller/mobile_controller.egg-info/entry_points.txt
+[1.110s] writing requirements to ../../build/mobile_controller/mobile_controller.egg-info/requires.txt
+[1.110s] writing top-level names to ../../build/mobile_controller/mobile_controller.egg-info/top_level.txt
+[1.129s] reading manifest file '../../build/mobile_controller/mobile_controller.egg-info/SOURCES.txt'
+[1.129s] adding license file 'LICENSE'
+[1.130s] writing manifest file '../../build/mobile_controller/mobile_controller.egg-info/SOURCES.txt'
+[1.130s] running build
+[1.130s] running build_py
+[1.130s] creating /home/jo/mobile_test/build/mobile_controller/build
+[1.130s] creating /home/jo/mobile_test/build/mobile_controller/build/lib
+[1.131s] creating /home/jo/mobile_test/build/mobile_controller/build/lib/mobile_controller
+[1.131s] copying mobile_controller/state_communicate.py -> /home/jo/mobile_test/build/mobile_controller/build/lib/mobile_controller
+[1.131s] copying mobile_controller/consensus_controller.py -> /home/jo/mobile_test/build/mobile_controller/build/lib/mobile_controller
+[1.131s] copying mobile_controller/laplacian_algorithm.py -> /home/jo/mobile_test/build/mobile_controller/build/lib/mobile_controller
+[1.131s] copying mobile_controller/__init__.py -> /home/jo/mobile_test/build/mobile_controller/build/lib/mobile_controller
+[1.131s] running install
+[1.134s] running install_lib
+[1.144s] creating /home/jo/mobile_test/install/mobile_controller/lib/python3.10/site-packages/mobile_controller
+[1.144s] copying /home/jo/mobile_test/build/mobile_controller/build/lib/mobile_controller/state_communicate.py -> /home/jo/mobile_test/install/mobile_controller/lib/python3.10/site-packages/mobile_controller
+[1.144s] copying /home/jo/mobile_test/build/mobile_controller/build/lib/mobile_controller/consensus_controller.py -> /home/jo/mobile_test/install/mobile_controller/lib/python3.10/site-packages/mobile_controller
+[1.144s] copying /home/jo/mobile_test/build/mobile_controller/build/lib/mobile_controller/laplacian_algorithm.py -> /home/jo/mobile_test/install/mobile_controller/lib/python3.10/site-packages/mobile_controller
+[1.144s] copying /home/jo/mobile_test/build/mobile_controller/build/lib/mobile_controller/__init__.py -> /home/jo/mobile_test/install/mobile_controller/lib/python3.10/site-packages/mobile_controller
+[1.144s] byte-compiling /home/jo/mobile_test/install/mobile_controller/lib/python3.10/site-packages/mobile_controller/state_communicate.py to state_communicate.cpython-310.pyc
+[1.144s] byte-compiling /home/jo/mobile_test/install/mobile_controller/lib/python3.10/site-packages/mobile_controller/consensus_controller.py to consensus_controller.cpython-310.pyc
+[1.145s] byte-compiling /home/jo/mobile_test/install/mobile_controller/lib/python3.10/site-packages/mobile_controller/laplacian_algorithm.py to laplacian_algorithm.cpython-310.pyc
+[1.146s] byte-compiling /home/jo/mobile_test/install/mobile_controller/lib/python3.10/site-packages/mobile_controller/__init__.py to __init__.cpython-310.pyc
+[1.146s] running install_data
+[1.146s] copying resource/mobile_controller -> /home/jo/mobile_test/install/mobile_controller/share/ament_index/resource_index/packages
+[1.146s] copying package.xml -> /home/jo/mobile_test/install/mobile_controller/share/mobile_controller
+[1.146s] running install_egg_info
+[1.156s] Copying ../../build/mobile_controller/mobile_controller.egg-info to /home/jo/mobile_test/install/mobile_controller/lib/python3.10/site-packages/mobile_controller-0.0.0-py3.10.egg-info
+[1.158s] running install_scripts
+[1.243s] Installing consensus_controller script to /home/jo/mobile_test/install/mobile_controller/lib/mobile_controller
+[1.243s] Installing laplacian_algorithm script to /home/jo/mobile_test/install/mobile_controller/lib/mobile_controller
+[1.243s] Installing state_communicate script to /home/jo/mobile_test/install/mobile_controller/lib/mobile_controller
+[1.243s] writing list of installed files to '/home/jo/mobile_test/build/mobile_controller/install.log'
+[1.262s] Invoked command in '/home/jo/mobile_test/src/mobile_controller' returned '0': AMENT_PREFIX_PATH=/home/jo/mobile_test/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jo/mobile_test/install/custom_interfaces LD_LIBRARY_PATH=/home/jo/mobile_test/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jo/mobile_test/build/mobile_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jo/mobile_test/install/mobile_controller/lib/python3.10/site-packages:/home/jo/mobile_test/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/mobile_controller build --build-base /home/jo/mobile_test/build/mobile_controller/build install --record /home/jo/mobile_test/build/mobile_controller/install.log --single-version-externally-managed install_data --force

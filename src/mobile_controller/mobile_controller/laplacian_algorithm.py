@@ -18,6 +18,8 @@ class LaplacianAlgorithm(Node):
         self.compensate_x = 0.0
         self.compensate_y = 0.0
         self.compensate_theta = 0.0
+        self.total_neighbors = 2  # 전체 이웃 로봇 수
+        self.ready_to_publish = True  # 갱신 완료 여부 확인 플래그 추가
 
         # 자신의 위치 정보 구독 (my_odom)
         self.odom_subscriber = self.create_subscription(
@@ -75,17 +77,21 @@ class LaplacianAlgorithm(Node):
         #self.get_logger().info(f'Received neighbor target for {msg.robot_id}: {msg.state}')
 
     def publish_target(self):
+        if not self.ready_to_publish:
+            return
+        
         # 자신의 목표 위치를 퍼블리싱
         target_msg = RobotState()
         target_msg.robot_id = self.robot_id
         target_msg.state = self.target
         self.target_publisher.publish(target_msg)
-        #self.get_logger().info(f'Published target: {self.target}')
+        self.get_logger().info(f'Published target: {self.target}')
 
     def consensus_loop(self):
-        if len(self.neighbor_targets) == 0:
+        if len(self.neighbor_targets) != self.total_neighbors:
             return  # 이웃 로봇들의 상태 정보가 없을 때는 제어하지 않음
 
+        #self.ready_to_publish = False
         # 상태 차이를 계산하고 제어 입력을 생성
         # 상태 차이를 저장(dot x)
         target_input_x = 0.0
@@ -108,6 +114,9 @@ class LaplacianAlgorithm(Node):
         self.compensate_x += -4*self.compensate_x-target_input_x
         self.compensate_y = -4*self.compensate_y-target_input_y
         self.compensate_theta = -4*self.compensate_theta-target_input_theta
+
+        #self.ready_to_publish = True
+        self.neighbor_targets.clear()
 
 
 

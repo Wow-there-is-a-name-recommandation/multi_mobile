@@ -1,0 +1,445 @@
+[0.108s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.108s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x73593cf36230>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x73593d03a560>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x73593d03a560>>, mixin_verb=('build',))
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.173s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.173s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jo/mobile_test'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_initial) by extensions ['ignore', 'ignore_ament_install']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_initial) by extension 'ignore'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_initial) by extension 'ignore_ament_install'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_initial) by extensions ['colcon_pkg']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_initial) by extension 'colcon_pkg'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_initial) by extensions ['colcon_meta']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_initial) by extension 'colcon_meta'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_initial) by extensions ['ros']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_initial) by extension 'ros'
+[0.194s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cmd_initial' with type 'ros.ament_python' and name 'cmd_initial'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'ignore'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'ignore_ament_install'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extensions ['colcon_pkg']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'colcon_pkg'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extensions ['colcon_meta']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'colcon_meta'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extensions ['ros']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_interfaces) by extension 'ros'
+[0.195s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom_interfaces' with type 'ros.ament_cmake' and name 'custom_interfaces'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_controller) by extension 'ignore'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_controller) by extension 'ignore_ament_install'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_controller) by extensions ['colcon_pkg']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_controller) by extension 'colcon_pkg'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_controller) by extensions ['colcon_meta']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_controller) by extension 'colcon_meta'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_controller) by extensions ['ros']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/mobile_controller) by extension 'ros'
+[0.196s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mobile_controller' with type 'ros.ament_python' and name 'mobile_controller'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extensions ['ignore', 'ignore_ament_install']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extension 'ignore'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extension 'ignore_ament_install'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extensions ['colcon_pkg']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extension 'colcon_pkg'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extensions ['colcon_meta']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extension 'colcon_meta'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extensions ['ros']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_bot) by extension 'ros'
+[0.197s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_bot' with type 'ros.ament_python' and name 'my_bot'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extensions ['ignore', 'ignore_ament_install']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'ignore'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'ignore_ament_install'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extensions ['colcon_pkg']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'colcon_pkg'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extensions ['colcon_meta']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'colcon_meta'
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extensions ['ros']
+[0.197s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3) by extension 'ros'
+[0.198s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3' with type 'ros.ament_python' and name 'turtlebot3'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_description) by extensions ['ignore', 'ignore_ament_install']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_description) by extension 'ignore'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_description) by extension 'ignore_ament_install'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_description) by extensions ['colcon_pkg']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_description) by extension 'colcon_pkg'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_description) by extensions ['colcon_meta']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_description) by extension 'colcon_meta'
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_description) by extensions ['ros']
+[0.198s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_description) by extension 'ros'
+[0.199s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_description' with type 'ros.ament_cmake' and name 'turtlebot3_description'
+[0.199s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.199s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.199s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.199s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.199s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.225s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.225s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.230s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 317 installed packages in /opt/ros/humble
+[0.231s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'cmd_initial' build argument 'cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'cmd_initial' build argument 'cmake_target' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'cmd_initial' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'cmd_initial' build argument 'cmake_clean_cache' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'cmd_initial' build argument 'cmake_clean_first' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'cmd_initial' build argument 'cmake_force_configure' from command line to 'False'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'cmd_initial' build argument 'ament_cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'cmd_initial' build argument 'catkin_cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'cmd_initial' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.275s] DEBUG:colcon.colcon_core.verb:Building package 'cmd_initial' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jo/mobile_test/build/cmd_initial', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jo/mobile_test/install/cmd_initial', 'merge_install': False, 'path': '/home/jo/mobile_test/src/cmd_initial', 'symlink_install': True, 'test_result_base': None}
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'custom_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.276s] DEBUG:colcon.colcon_core.verb:Building package 'custom_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jo/mobile_test/build/custom_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jo/mobile_test/install/custom_interfaces', 'merge_install': False, 'path': '/home/jo/mobile_test/src/custom_interfaces', 'symlink_install': True, 'test_result_base': None}
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_args' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_target' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_clean_cache' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_clean_first' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'cmake_force_configure' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'ament_cmake_args' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'catkin_cmake_args' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.276s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jo/mobile_test/build/turtlebot3', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jo/mobile_test/install/turtlebot3', 'merge_install': False, 'path': '/home/jo/mobile_test/src/turtlebot3', 'symlink_install': True, 'test_result_base': None}
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'cmake_args' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'cmake_target' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.277s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jo/mobile_test/build/turtlebot3_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jo/mobile_test/install/turtlebot3_description', 'merge_install': False, 'path': '/home/jo/mobile_test/src/turtlebot3_description', 'symlink_install': True, 'test_result_base': None}
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'mobile_controller' build argument 'cmake_args' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'mobile_controller' build argument 'cmake_target' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'mobile_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'mobile_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'mobile_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'mobile_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'mobile_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'mobile_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'mobile_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.278s] DEBUG:colcon.colcon_core.verb:Building package 'mobile_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jo/mobile_test/build/mobile_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jo/mobile_test/install/mobile_controller', 'merge_install': False, 'path': '/home/jo/mobile_test/src/mobile_controller', 'symlink_install': True, 'test_result_base': None}
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_args' from command line to 'None'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_target' from command line to 'None'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_clean_cache' from command line to 'False'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_clean_first' from command line to 'False'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'cmake_force_configure' from command line to 'False'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'ament_cmake_args' from command line to 'None'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'catkin_cmake_args' from command line to 'None'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'my_bot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.278s] DEBUG:colcon.colcon_core.verb:Building package 'my_bot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jo/mobile_test/build/my_bot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jo/mobile_test/install/my_bot', 'merge_install': False, 'path': '/home/jo/mobile_test/src/my_bot', 'symlink_install': True, 'test_result_base': None}
+[0.278s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.279s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.280s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jo/mobile_test/src/custom_interfaces' with build type 'ament_cmake'
+[0.280s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jo/mobile_test/src/custom_interfaces'
+[0.285s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.285s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.285s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.289s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jo/mobile_test/src/turtlebot3_description' with build type 'ament_cmake'
+[0.289s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jo/mobile_test/src/turtlebot3_description'
+[0.289s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.289s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.292s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jo/mobile_test/src/cmd_initial' with build type 'ament_python'
+[0.292s] Level 1:colcon.colcon_core.shell:create_environment_hook('cmd_initial', 'ament_prefix_path')
+[0.292s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/install/cmd_initial/share/cmd_initial/hook/ament_prefix_path.ps1'
+[0.293s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jo/mobile_test/install/cmd_initial/share/cmd_initial/hook/ament_prefix_path.dsv'
+[0.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/install/cmd_initial/share/cmd_initial/hook/ament_prefix_path.sh'
+[0.295s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.295s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.298s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jo/mobile_test/src/turtlebot3' with build type 'ament_python'
+[0.298s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3', 'ament_prefix_path')
+[0.298s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/install/turtlebot3/share/turtlebot3/hook/ament_prefix_path.ps1'
+[0.299s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jo/mobile_test/install/turtlebot3/share/turtlebot3/hook/ament_prefix_path.dsv'
+[0.299s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/install/turtlebot3/share/turtlebot3/hook/ament_prefix_path.sh'
+[0.300s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.300s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.309s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jo/mobile_test/build/custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jo/mobile_test/src/custom_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jo/mobile_test/install/custom_interfaces
+[0.312s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jo/mobile_test/build/turtlebot3_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jo/mobile_test/src/turtlebot3_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jo/mobile_test/install/turtlebot3_description
+[0.544s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jo/mobile_test/src/cmd_initial'
+[0.545s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.545s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.729s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jo/mobile_test/src/turtlebot3'
+[0.729s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.729s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.736s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jo/mobile_test/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jo/mobile_test/src/turtlebot3_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jo/mobile_test/install/turtlebot3_description
+[0.737s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jo/mobile_test/build/turtlebot3_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jo/mobile_test/build/turtlebot3_description -- -j16 -l16
+[0.778s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jo/mobile_test/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jo/mobile_test/build/turtlebot3_description -- -j16 -l16
+[0.813s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jo/mobile_test/build/turtlebot3_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jo/mobile_test/build/turtlebot3_description
+[0.836s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_description)
+[0.836s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jo/mobile_test/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jo/mobile_test/build/turtlebot3_description
+[0.838s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/turtlebot3_description' for CMake module files
+[0.839s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/turtlebot3_description' for CMake config files
+[0.839s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_description', 'cmake_prefix_path')
+[0.839s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/install/turtlebot3_description/share/turtlebot3_description/hook/cmake_prefix_path.ps1'
+[0.840s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jo/mobile_test/install/turtlebot3_description/share/turtlebot3_description/hook/cmake_prefix_path.dsv'
+[0.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/install/turtlebot3_description/share/turtlebot3_description/hook/cmake_prefix_path.sh'
+[0.841s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/turtlebot3_description/bin'
+[0.841s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/turtlebot3_description/lib/pkgconfig/turtlebot3_description.pc'
+[0.841s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/turtlebot3_description/lib/python3.10/site-packages'
+[0.841s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/turtlebot3_description/bin'
+[0.841s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/turtlebot3_description/share/turtlebot3_description/package.ps1'
+[0.842s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jo/mobile_test/install/turtlebot3_description/share/turtlebot3_description/package.dsv'
+[0.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/turtlebot3_description/share/turtlebot3_description/package.sh'
+[0.843s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/turtlebot3_description/share/turtlebot3_description/package.bash'
+[0.843s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/turtlebot3_description/share/turtlebot3_description/package.zsh'
+[0.844s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jo/mobile_test/install/turtlebot3_description/share/colcon-core/packages/turtlebot3_description)
+[0.868s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_description)
+[0.868s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/turtlebot3_description' for CMake module files
+[0.869s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/turtlebot3_description' for CMake config files
+[0.869s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_description', 'cmake_prefix_path')
+[0.869s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/install/turtlebot3_description/share/turtlebot3_description/hook/cmake_prefix_path.ps1'
+[0.870s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jo/mobile_test/install/turtlebot3_description/share/turtlebot3_description/hook/cmake_prefix_path.dsv'
+[0.870s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/install/turtlebot3_description/share/turtlebot3_description/hook/cmake_prefix_path.sh'
+[0.871s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/turtlebot3_description/bin'
+[0.871s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/turtlebot3_description/lib/pkgconfig/turtlebot3_description.pc'
+[0.871s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/turtlebot3_description/lib/python3.10/site-packages'
+[0.871s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/turtlebot3_description/bin'
+[0.872s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/turtlebot3_description/share/turtlebot3_description/package.ps1'
+[0.872s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jo/mobile_test/install/turtlebot3_description/share/turtlebot3_description/package.dsv'
+[0.872s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/turtlebot3_description/share/turtlebot3_description/package.sh'
+[0.873s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/turtlebot3_description/share/turtlebot3_description/package.bash'
+[0.873s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/turtlebot3_description/share/turtlebot3_description/package.zsh'
+[0.873s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jo/mobile_test/install/turtlebot3_description/share/colcon-core/packages/turtlebot3_description)
+[0.874s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jo/mobile_test/src/my_bot' with build type 'ament_python'
+[0.874s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_bot', 'ament_prefix_path')
+[0.874s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/install/my_bot/share/my_bot/hook/ament_prefix_path.ps1'
+[0.875s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jo/mobile_test/install/my_bot/share/my_bot/hook/ament_prefix_path.dsv'
+[0.875s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/install/my_bot/share/my_bot/hook/ament_prefix_path.sh'
+[0.875s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.875s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.037s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jo/mobile_test/src/my_bot'
+[1.038s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.038s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.157s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/jo/mobile_test/install/cmd_initial/share/ament_index/resource_index/packages/cmd_initial
+[1.157s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/jo/mobile_test/install/cmd_initial/share/cmd_initial/package.xml
+[1.157s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/jo/mobile_test/install/cmd_initial/lib/cmd_initial/initial_cmd
+[1.159s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/jo/mobile_test/install/turtlebot3/share/ament_index/resource_index/packages/turtlebot3
+[1.159s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/jo/mobile_test/install/turtlebot3/share/turtlebot3/package.xml
+[1.159s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jo/mobile_test/build/cmd_initial': PYTHONPATH=/home/jo/mobile_test/build/cmd_initial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jo/mobile_test/install/cmd_initial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jo/mobile_test/build/cmd_initial/build --no-deps symlink_data --force
+[1.162s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jo/mobile_test/build/turtlebot3': PYTHONPATH=/home/jo/mobile_test/build/turtlebot3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jo/mobile_test/install/turtlebot3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jo/mobile_test/build/turtlebot3/build --no-deps symlink_data --force
+[1.216s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jo/mobile_test/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jo/mobile_test/src/custom_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jo/mobile_test/install/custom_interfaces
+[1.217s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jo/mobile_test/build/custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jo/mobile_test/build/custom_interfaces -- -j16 -l16
+[1.455s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/jo/mobile_test/install/my_bot/share/ament_index/resource_index/packages/my_bot
+[1.455s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/jo/mobile_test/install/my_bot/share/my_bot/package.xml
+[1.455s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/jo/mobile_test/install/my_bot/share/my_bot/launch/controller.launch.py
+[1.455s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/jo/mobile_test/install/my_bot/share/my_bot/launch/rsp.launch.py
+[1.455s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/jo/mobile_test/install/my_bot/share/my_bot/launch/multi_turtle3.launch.py
+[1.458s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jo/mobile_test/build/my_bot': AMENT_PREFIX_PATH=/home/jo/mobile_test/install/turtlebot3_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jo/mobile_test/install/turtlebot3_description PYTHONPATH=/home/jo/mobile_test/build/my_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jo/mobile_test/install/my_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jo/mobile_test/build/my_bot/build --no-deps symlink_data --force
+[1.536s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jo/mobile_test/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jo/mobile_test/build/custom_interfaces -- -j16 -l16
+[1.593s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jo/mobile_test/build/custom_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jo/mobile_test/build/custom_interfaces
+[1.646s] Level 1:colcon.colcon_core.shell:create_environment_hook('cmd_initial', 'pythonpath_develop')
+[1.647s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/build/cmd_initial/share/cmd_initial/hook/pythonpath_develop.ps1'
+[1.647s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jo/mobile_test/build/cmd_initial' returned '0': PYTHONPATH=/home/jo/mobile_test/build/cmd_initial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jo/mobile_test/install/cmd_initial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jo/mobile_test/build/cmd_initial/build --no-deps symlink_data --force
+[1.648s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jo/mobile_test/build/cmd_initial/share/cmd_initial/hook/pythonpath_develop.dsv'
+[1.648s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/build/cmd_initial/share/cmd_initial/hook/pythonpath_develop.sh'
+[1.649s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/cmd_initial' for CMake module files
+[1.649s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/cmd_initial' for CMake config files
+[1.649s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/cmd_initial/lib'
+[1.650s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/cmd_initial/bin'
+[1.650s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/cmd_initial/lib/pkgconfig/cmd_initial.pc'
+[1.650s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/cmd_initial/lib/python3.10/site-packages'
+[1.650s] Level 1:colcon.colcon_core.shell:create_environment_hook('cmd_initial', 'pythonpath')
+[1.650s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/install/cmd_initial/share/cmd_initial/hook/pythonpath.ps1'
+[1.650s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jo/mobile_test/install/cmd_initial/share/cmd_initial/hook/pythonpath.dsv'
+[1.650s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/install/cmd_initial/share/cmd_initial/hook/pythonpath.sh'
+[1.651s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/cmd_initial/bin'
+[1.651s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cmd_initial)
+[1.651s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/cmd_initial/share/cmd_initial/package.ps1'
+[1.652s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jo/mobile_test/install/cmd_initial/share/cmd_initial/package.dsv'
+[1.652s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/cmd_initial/share/cmd_initial/package.sh'
+[1.653s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/cmd_initial/share/cmd_initial/package.bash'
+[1.654s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/cmd_initial/share/cmd_initial/package.zsh'
+[1.654s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jo/mobile_test/install/cmd_initial/share/colcon-core/packages/cmd_initial)
+[1.655s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_interfaces)
+[1.655s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/custom_interfaces' for CMake module files
+[1.656s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jo/mobile_test/build/custom_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jo/mobile_test/build/custom_interfaces
+[1.656s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/custom_interfaces' for CMake config files
+[1.656s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'cmake_prefix_path')
+[1.656s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.ps1'
+[1.657s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jo/mobile_test/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.dsv'
+[1.657s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.sh'
+[1.657s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/custom_interfaces/lib'
+[1.657s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'ld_library_path_lib')
+[1.657s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.ps1'
+[1.658s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jo/mobile_test/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.dsv'
+[1.658s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.sh'
+[1.658s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/custom_interfaces/bin'
+[1.658s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/custom_interfaces/lib/pkgconfig/custom_interfaces.pc'
+[1.658s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/custom_interfaces/lib/python3.10/site-packages'
+[1.659s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/custom_interfaces/bin'
+[1.659s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/custom_interfaces/share/custom_interfaces/package.ps1'
+[1.659s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jo/mobile_test/install/custom_interfaces/share/custom_interfaces/package.dsv'
+[1.659s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/custom_interfaces/share/custom_interfaces/package.sh'
+[1.660s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/custom_interfaces/share/custom_interfaces/package.bash'
+[1.660s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/custom_interfaces/share/custom_interfaces/package.zsh'
+[1.660s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jo/mobile_test/install/custom_interfaces/share/colcon-core/packages/custom_interfaces)
+[1.662s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3', 'pythonpath_develop')
+[1.662s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/build/turtlebot3/share/turtlebot3/hook/pythonpath_develop.ps1'
+[1.662s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jo/mobile_test/build/turtlebot3' returned '0': PYTHONPATH=/home/jo/mobile_test/build/turtlebot3/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jo/mobile_test/install/turtlebot3/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jo/mobile_test/build/turtlebot3/build --no-deps symlink_data --force
+[1.662s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jo/mobile_test/build/turtlebot3/share/turtlebot3/hook/pythonpath_develop.dsv'
+[1.663s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/build/turtlebot3/share/turtlebot3/hook/pythonpath_develop.sh'
+[1.663s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/turtlebot3' for CMake module files
+[1.663s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/turtlebot3' for CMake config files
+[1.664s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/turtlebot3/lib'
+[1.664s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/turtlebot3/bin'
+[1.664s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/turtlebot3/lib/pkgconfig/turtlebot3.pc'
+[1.664s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/turtlebot3/lib/python3.10/site-packages'
+[1.664s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3', 'pythonpath')
+[1.664s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/install/turtlebot3/share/turtlebot3/hook/pythonpath.ps1'
+[1.664s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jo/mobile_test/install/turtlebot3/share/turtlebot3/hook/pythonpath.dsv'
+[1.665s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/install/turtlebot3/share/turtlebot3/hook/pythonpath.sh'
+[1.665s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/turtlebot3/bin'
+[1.665s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3)
+[1.665s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/turtlebot3/share/turtlebot3/package.ps1'
+[1.666s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jo/mobile_test/install/turtlebot3/share/turtlebot3/package.dsv'
+[1.666s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/turtlebot3/share/turtlebot3/package.sh'
+[1.666s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/turtlebot3/share/turtlebot3/package.bash'
+[1.667s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/turtlebot3/share/turtlebot3/package.zsh'
+[1.667s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jo/mobile_test/install/turtlebot3/share/colcon-core/packages/turtlebot3)
+[1.733s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_interfaces)
+[1.734s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/custom_interfaces' for CMake module files
+[1.734s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/custom_interfaces' for CMake config files
+[1.734s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'cmake_prefix_path')
+[1.735s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.ps1'
+[1.735s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jo/mobile_test/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.dsv'
+[1.735s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/install/custom_interfaces/share/custom_interfaces/hook/cmake_prefix_path.sh'
+[1.736s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/custom_interfaces/lib'
+[1.736s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_interfaces', 'ld_library_path_lib')
+[1.736s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.ps1'
+[1.736s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jo/mobile_test/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.dsv'
+[1.737s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/install/custom_interfaces/share/custom_interfaces/hook/ld_library_path_lib.sh'
+[1.737s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/custom_interfaces/bin'
+[1.737s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/custom_interfaces/lib/pkgconfig/custom_interfaces.pc'
+[1.737s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/custom_interfaces/lib/python3.10/site-packages'
+[1.737s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/custom_interfaces/bin'
+[1.737s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/custom_interfaces/share/custom_interfaces/package.ps1'
+[1.738s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jo/mobile_test/install/custom_interfaces/share/custom_interfaces/package.dsv'
+[1.738s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/custom_interfaces/share/custom_interfaces/package.sh'
+[1.739s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/custom_interfaces/share/custom_interfaces/package.bash'
+[1.739s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/custom_interfaces/share/custom_interfaces/package.zsh'
+[1.739s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jo/mobile_test/install/custom_interfaces/share/colcon-core/packages/custom_interfaces)
+[1.740s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jo/mobile_test/src/mobile_controller' with build type 'ament_python'
+[1.740s] Level 1:colcon.colcon_core.shell:create_environment_hook('mobile_controller', 'ament_prefix_path')
+[1.740s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/install/mobile_controller/share/mobile_controller/hook/ament_prefix_path.ps1'
+[1.741s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jo/mobile_test/install/mobile_controller/share/mobile_controller/hook/ament_prefix_path.dsv'
+[1.741s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/install/mobile_controller/share/mobile_controller/hook/ament_prefix_path.sh'
+[1.742s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.742s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.918s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jo/mobile_test/src/mobile_controller'
+[1.919s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.919s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.011s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_bot', 'pythonpath_develop')
+[2.012s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/build/my_bot/share/my_bot/hook/pythonpath_develop.ps1'
+[2.012s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jo/mobile_test/build/my_bot' returned '0': AMENT_PREFIX_PATH=/home/jo/mobile_test/install/turtlebot3_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jo/mobile_test/install/turtlebot3_description PYTHONPATH=/home/jo/mobile_test/build/my_bot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jo/mobile_test/install/my_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jo/mobile_test/build/my_bot/build --no-deps symlink_data --force
+[2.013s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jo/mobile_test/build/my_bot/share/my_bot/hook/pythonpath_develop.dsv'
+[2.013s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/build/my_bot/share/my_bot/hook/pythonpath_develop.sh'
+[2.014s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/my_bot' for CMake module files
+[2.015s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/my_bot' for CMake config files
+[2.015s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/my_bot/lib'
+[2.015s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/my_bot/bin'
+[2.015s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/my_bot/lib/pkgconfig/my_bot.pc'
+[2.016s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/my_bot/lib/python3.10/site-packages'
+[2.016s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_bot', 'pythonpath')
+[2.016s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/install/my_bot/share/my_bot/hook/pythonpath.ps1'
+[2.016s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jo/mobile_test/install/my_bot/share/my_bot/hook/pythonpath.dsv'
+[2.017s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/install/my_bot/share/my_bot/hook/pythonpath.sh'
+[2.017s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/my_bot/bin'
+[2.017s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_bot)
+[2.018s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/my_bot/share/my_bot/package.ps1'
+[2.018s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jo/mobile_test/install/my_bot/share/my_bot/package.dsv'
+[2.019s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/my_bot/share/my_bot/package.sh'
+[2.019s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/my_bot/share/my_bot/package.bash'
+[2.020s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/my_bot/share/my_bot/package.zsh'
+[2.020s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jo/mobile_test/install/my_bot/share/colcon-core/packages/my_bot)
+[2.363s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/jo/mobile_test/install/mobile_controller/share/ament_index/resource_index/packages/mobile_controller
+[2.363s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/jo/mobile_test/install/mobile_controller/share/mobile_controller/package.xml
+[2.363s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/jo/mobile_test/install/mobile_controller/lib/mobile_controller/consensus_controller
+[2.363s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/jo/mobile_test/install/mobile_controller/lib/mobile_controller/laplacian_algorithm
+[2.363s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /home/jo/mobile_test/install/mobile_controller/lib/mobile_controller/state_communicate
+[2.365s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jo/mobile_test/build/mobile_controller': AMENT_PREFIX_PATH=/home/jo/mobile_test/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jo/mobile_test/install/custom_interfaces LD_LIBRARY_PATH=/home/jo/mobile_test/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jo/mobile_test/build/mobile_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jo/mobile_test/install/mobile_controller/lib/python3.10/site-packages:/home/jo/mobile_test/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jo/mobile_test/build/mobile_controller/build --no-deps symlink_data --force
+[2.823s] Level 1:colcon.colcon_core.shell:create_environment_hook('mobile_controller', 'pythonpath_develop')
+[2.823s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/build/mobile_controller/share/mobile_controller/hook/pythonpath_develop.ps1'
+[2.824s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jo/mobile_test/build/mobile_controller' returned '0': AMENT_PREFIX_PATH=/home/jo/mobile_test/install/custom_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jo/mobile_test/install/custom_interfaces LD_LIBRARY_PATH=/home/jo/mobile_test/install/custom_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jo/mobile_test/build/mobile_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jo/mobile_test/install/mobile_controller/lib/python3.10/site-packages:/home/jo/mobile_test/install/custom_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jo/mobile_test/build/mobile_controller/build --no-deps symlink_data --force
+[2.824s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jo/mobile_test/build/mobile_controller/share/mobile_controller/hook/pythonpath_develop.dsv'
+[2.825s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/build/mobile_controller/share/mobile_controller/hook/pythonpath_develop.sh'
+[2.825s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/mobile_controller' for CMake module files
+[2.825s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/mobile_controller' for CMake config files
+[2.826s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/mobile_controller/lib'
+[2.826s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/mobile_controller/bin'
+[2.826s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/mobile_controller/lib/pkgconfig/mobile_controller.pc'
+[2.826s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/mobile_controller/lib/python3.10/site-packages'
+[2.826s] Level 1:colcon.colcon_core.shell:create_environment_hook('mobile_controller', 'pythonpath')
+[2.826s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/install/mobile_controller/share/mobile_controller/hook/pythonpath.ps1'
+[2.827s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jo/mobile_test/install/mobile_controller/share/mobile_controller/hook/pythonpath.dsv'
+[2.827s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jo/mobile_test/install/mobile_controller/share/mobile_controller/hook/pythonpath.sh'
+[2.827s] Level 1:colcon.colcon_core.environment:checking '/home/jo/mobile_test/install/mobile_controller/bin'
+[2.827s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mobile_controller)
+[2.827s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/mobile_controller/share/mobile_controller/package.ps1'
+[2.828s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jo/mobile_test/install/mobile_controller/share/mobile_controller/package.dsv'
+[2.828s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/mobile_controller/share/mobile_controller/package.sh'
+[2.828s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/mobile_controller/share/mobile_controller/package.bash'
+[2.829s] INFO:colcon.colcon_core.shell:Creating package script '/home/jo/mobile_test/install/mobile_controller/share/mobile_controller/package.zsh'
+[2.829s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jo/mobile_test/install/mobile_controller/share/colcon-core/packages/mobile_controller)
+[2.829s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.829s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.830s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.830s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.835s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.835s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.835s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.852s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.853s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jo/mobile_test/install/local_setup.ps1'
+[2.854s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jo/mobile_test/install/_local_setup_util_ps1.py'
+[2.854s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jo/mobile_test/install/setup.ps1'
+[2.855s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jo/mobile_test/install/local_setup.sh'
+[2.856s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jo/mobile_test/install/_local_setup_util_sh.py'
+[2.856s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jo/mobile_test/install/setup.sh'
+[2.857s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jo/mobile_test/install/local_setup.bash'
+[2.857s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jo/mobile_test/install/setup.bash'
+[2.858s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jo/mobile_test/install/local_setup.zsh'
+[2.858s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jo/mobile_test/install/setup.zsh'

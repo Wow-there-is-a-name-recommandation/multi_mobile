@@ -1,0 +1,6 @@
+Invoking command in '/home/jo/mobile_test/build/turtlebot3_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jo/mobile_test/src/turtlebot3_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jo/mobile_test/install/turtlebot3_description
+Invoked command in '/home/jo/mobile_test/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/jo/mobile_test/src/turtlebot3_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jo/mobile_test/install/turtlebot3_description
+Invoking command in '/home/jo/mobile_test/build/turtlebot3_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jo/mobile_test/build/turtlebot3_description -- -j16 -l16
+Invoked command in '/home/jo/mobile_test/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jo/mobile_test/build/turtlebot3_description -- -j16 -l16
+Invoking command in '/home/jo/mobile_test/build/turtlebot3_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jo/mobile_test/build/turtlebot3_description
+Invoked command in '/home/jo/mobile_test/build/turtlebot3_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jo/mobile_test/build/turtlebot3_description

@@ -1,0 +1,45 @@
+/home/jo/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:260: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running develop
+/home/jo/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` and ``easy_install``.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://github.com/pypa/setuptools/issues/917 for details.
+        ********************************************************************************
+
+!!
+  easy_install.initialize_options(self)
+Removing /home/jo/mobile_test/install/turtlebot3/lib/python3.10/site-packages/turtlebot3.egg-link (link to .)
+/home/jo/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:260: UserWarning: Unknown distribution option: 'tests_require'
+  warnings.warn(msg)
+running egg_info
+writing ../../build/turtlebot3/turtlebot3.egg-info/PKG-INFO
+writing dependency_links to ../../build/turtlebot3/turtlebot3.egg-info/dependency_links.txt
+writing requirements to ../../build/turtlebot3/turtlebot3.egg-info/requires.txt
+writing top-level names to ../../build/turtlebot3/turtlebot3.egg-info/top_level.txt
+reading manifest file '../../build/turtlebot3/turtlebot3.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/turtlebot3/turtlebot3.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/jo/mobile_test/build/turtlebot3/build
+creating /home/jo/mobile_test/build/turtlebot3/build/lib
+creating /home/jo/mobile_test/build/turtlebot3/build/lib/turtlebot3
+copying turtlebot3/__init__.py -> /home/jo/mobile_test/build/turtlebot3/build/lib/turtlebot3
+running install
+running install_lib
+creating /home/jo/mobile_test/install/turtlebot3/lib/python3.10/site-packages/turtlebot3
+copying /home/jo/mobile_test/build/turtlebot3/build/lib/turtlebot3/__init__.py -> /home/jo/mobile_test/install/turtlebot3/lib/python3.10/site-packages/turtlebot3
+byte-compiling /home/jo/mobile_test/install/turtlebot3/lib/python3.10/site-packages/turtlebot3/__init__.py to __init__.cpython-310.pyc
+running install_data
+copying resource/turtlebot3 -> /home/jo/mobile_test/install/turtlebot3/share/ament_index/resource_index/packages
+copying package.xml -> /home/jo/mobile_test/install/turtlebot3/share/turtlebot3
+running install_egg_info
+Copying ../../build/turtlebot3/turtlebot3.egg-info to /home/jo/mobile_test/install/turtlebot3/lib/python3.10/site-packages/turtlebot3-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/jo/mobile_test/build/turtlebot3/install.log'
