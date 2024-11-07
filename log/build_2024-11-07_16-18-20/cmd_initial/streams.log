@@ -1,0 +1,32 @@
+[0.950s] Invoking command in '/home/jo/mobile_test/build/cmd_initial': PYTHONPATH=/home/jo/mobile_test/build/cmd_initial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jo/mobile_test/install/cmd_initial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jo/mobile_test/build/cmd_initial/build --no-deps symlink_data
+[1.065s] /home/jo/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:260: UserWarning: Unknown distribution option: 'tests_require'
+[1.065s]   warnings.warn(msg)
+[1.186s] running develop
+[1.186s] /home/jo/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[1.186s] !!
+[1.186s] 
+[1.186s]         ********************************************************************************
+[1.186s]         Please avoid running ``setup.py`` and ``easy_install``.
+[1.187s]         Instead, use pypa/build, pypa/installer or other
+[1.187s]         standards-based tools.
+[1.187s] 
+[1.187s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[1.187s]         ********************************************************************************
+[1.187s] 
+[1.187s] !!
+[1.187s]   easy_install.initialize_options(self)
+[1.339s] running egg_info
+[1.349s] writing cmd_initial.egg-info/PKG-INFO
+[1.349s] writing dependency_links to cmd_initial.egg-info/dependency_links.txt
+[1.349s] writing entry points to cmd_initial.egg-info/entry_points.txt
+[1.349s] writing requirements to cmd_initial.egg-info/requires.txt
+[1.350s] writing top-level names to cmd_initial.egg-info/top_level.txt
+[1.371s] reading manifest file 'cmd_initial.egg-info/SOURCES.txt'
+[1.372s] writing manifest file 'cmd_initial.egg-info/SOURCES.txt'
+[1.383s] running build_ext
+[1.383s] Creating /home/jo/mobile_test/install/cmd_initial/lib/python3.10/site-packages/cmd-initial.egg-link (link to .)
+[1.384s] Installing initial_cmd script to /home/jo/mobile_test/install/cmd_initial/lib/cmd_initial
+[1.384s] 
+[1.384s] Installed /home/jo/mobile_test/build/cmd_initial
+[1.384s] running symlink_data
+[1.410s] Invoked command in '/home/jo/mobile_test/build/cmd_initial' returned '0': PYTHONPATH=/home/jo/mobile_test/build/cmd_initial/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jo/mobile_test/install/cmd_initial/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jo/mobile_test/build/cmd_initial/build --no-deps symlink_data
