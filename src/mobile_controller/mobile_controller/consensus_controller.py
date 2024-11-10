@@ -89,49 +89,29 @@ class MobileController(Node):
         attractive_force = [0.0, 0.0]
         repulsive_force = [0.0, 0.0]
 
-        # 목적지에 대한 인력 계산
-        '''
+        # 인력 계산 (목표 지점 방향으로)
         attraction_strength = np.exp(-distance_to_target)  # 거리가 가까워질수록 인력이 약해짐
         attractive_force[0] = (self.target[0] - self.state[0]) * attraction_strength
         attractive_force[1] = (self.target[1] - self.state[1]) * attraction_strength
-        '''
-        # 중심점에 대한 인력 계산 - 거리 가까워질수록 인력 감소 (선형)
-        max_distance = 5.0  # 원하는 반경
-        attraction_strength = max(0, (max_distance - distance_to_target) / max_distance)
-        attractive_force[0] = (self.target[0] - self.state[0]) * attraction_strength
-        attractive_force[1] = (self.target[1] - self.state[1]) * attraction_strength
 
-        # 이웃 로봇에 대한 척력 계산
-        '''
+        # 이웃 로봇에 대한 척력(밀림) 계산
         for neighbor_id, neighbor_state in self.neighbor_states.items():
             dx = self.state[0] - neighbor_state[0]
             dy = self.state[1] - neighbor_state[1]
             distance = math.sqrt(dx ** 2 + dy ** 2)
 
-            # 거리가 가까울수록 큰 척력 적용, 최대 크기는 5로 제한
-            if distance < 5.0 and distance > 0.1:
-                repulsion_strength = min(5.0, 1.0 / distance ** 2)
+            if distance < 5.0 and distance > 0.1:  # 너무 가깝거나 멀리 있는 로봇은 고려하지 않음
+                repulsion_strength = min(5.0, 1.0 / distance ** 2)  # 거리가 가까울수록 큰 척력 적용
                 repulsive_force[0] += repulsion_strength * dx / distance
                 repulsive_force[1] += repulsion_strength * dy / distance
-        '''
 
-        for neighbor_id, neighbor_state in self.neighbor_states.items():
-            dx = self.state[0] - neighbor_state[0]
-            dy = self.state[1] - neighbor_state[1]
-            distance = math.sqrt(dx ** 2 + dy ** 2)
-
-            # 거리 가까울수록 큰 척력 적용, 최대 크기는 5로 제한
-            if distance < 5.0 and distance > 0.1:
-                repulsion_strength = min(5.0, 1.0 / (distance ** 2))
-                repulsive_force[0] += repulsion_strength * dx / distance
-                repulsive_force[1] += repulsion_strength * dy / distance
-            
         # 최종 제어 입력 계산
         total_force = [
             attractive_force[0] + repulsive_force[0],
             attractive_force[1] + repulsive_force[1]
         ]
 
+        # 방향과 속도 설정
         target_direction = math.atan2(total_force[1], total_force[0])
         angle_to_target = target_direction - self.state[2]
         angle_to_target = math.atan2(math.sin(angle_to_target), math.cos(angle_to_target))
@@ -139,11 +119,8 @@ class MobileController(Node):
         linear_velocity = math.sqrt(total_force[0] ** 2 + total_force[1] ** 2)
         angular_velocity = angle_to_target
 
-        # 직진 속도와 각속도 설정
-        linear_velocity = distance_to_target  # 최대 속도 제한 (예: 1.0)
-        angular_velocity = angle_to_target
-
-        if(distance_to_target<=0.1):
+        # 목표 지점에 도달했을 때 멈춤
+        if distance_to_target <= 0.1:
             cmd_vel.linear.x = 0.0
             cmd_vel.angular.z = 0.0
         else:
@@ -151,7 +128,7 @@ class MobileController(Node):
             cmd_vel.angular.z = min(2.0, angular_velocity)
 
         self.cmd_vel_publisher.publish(cmd_vel)
-        #self.get_logger().info(f'Publishing control input: x={cmd_vel.linear.x}, theta={cmd_vel.angular.z}')
+        
         #self.get_logger().info(f'Publishing control x={self.state[0]}, y={self.state[1]}, dis={target_direction}')
 
 

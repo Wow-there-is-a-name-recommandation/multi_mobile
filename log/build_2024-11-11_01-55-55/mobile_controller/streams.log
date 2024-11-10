@@ -1,0 +1,34 @@
+[0.508s] Invoking command in '/home/jo/mobile_test/build/mobile_controller': CMAKE_PREFIX_PATH=/home/jo/mobile_test/install/custom_interfaces:/home/jo/mobile_test/install/turtlebot3_description PYTHONPATH=/home/jo/mobile_test/build/mobile_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jo/mobile_test/install/mobile_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jo/mobile_test/build/mobile_controller/build --no-deps symlink_data
+[0.617s] /home/jo/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:260: UserWarning: Unknown distribution option: 'tests_require'
+[0.617s]   warnings.warn(msg)
+[0.733s] running develop
+[0.733s] /home/jo/.local/lib/python3.10/site-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[0.733s] !!
+[0.733s] 
+[0.733s]         ********************************************************************************
+[0.733s]         Please avoid running ``setup.py`` and ``easy_install``.
+[0.733s]         Instead, use pypa/build, pypa/installer or other
+[0.733s]         standards-based tools.
+[0.733s] 
+[0.733s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[0.734s]         ********************************************************************************
+[0.734s] 
+[0.734s] !!
+[0.734s]   easy_install.initialize_options(self)
+[0.879s] running egg_info
+[0.890s] writing mobile_controller.egg-info/PKG-INFO
+[0.890s] writing dependency_links to mobile_controller.egg-info/dependency_links.txt
+[0.890s] writing entry points to mobile_controller.egg-info/entry_points.txt
+[0.891s] writing requirements to mobile_controller.egg-info/requires.txt
+[0.891s] writing top-level names to mobile_controller.egg-info/top_level.txt
+[0.913s] reading manifest file 'mobile_controller.egg-info/SOURCES.txt'
+[0.914s] writing manifest file 'mobile_controller.egg-info/SOURCES.txt'
+[0.926s] running build_ext
+[0.926s] Creating /home/jo/mobile_test/install/mobile_controller/lib/python3.10/site-packages/mobile-controller.egg-link (link to .)
+[0.926s] Installing consensus_controller script to /home/jo/mobile_test/install/mobile_controller/lib/mobile_controller
+[0.926s] Installing laplacian_algorithm script to /home/jo/mobile_test/install/mobile_controller/lib/mobile_controller
+[0.927s] Installing state_communicate script to /home/jo/mobile_test/install/mobile_controller/lib/mobile_controller
+[0.927s] 
+[0.927s] Installed /home/jo/mobile_test/build/mobile_controller
+[0.927s] running symlink_data
+[0.957s] Invoked command in '/home/jo/mobile_test/build/mobile_controller' returned '0': CMAKE_PREFIX_PATH=/home/jo/mobile_test/install/custom_interfaces:/home/jo/mobile_test/install/turtlebot3_description PYTHONPATH=/home/jo/mobile_test/build/mobile_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jo/mobile_test/install/mobile_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /home/jo/mobile_test/build/mobile_controller/build --no-deps symlink_data
