@@ -83,7 +83,7 @@ class MobileController(Node):
         attractive_force = [0.0, 0.0]
         repulsive_force = [0.0, 0.0]
         gain_a = 1
-        gain_r = 0.5
+        gain_r = 1
 
         # 인력 계산 (목표 지점 방향으로)
         attractive_force[0] = gain_a * (self.target[0] - self.state[0])/target_distance
@@ -96,8 +96,8 @@ class MobileController(Node):
 
             robot_distance = math.sqrt(dx ** 2 + dy ** 2)
 
-            if 0 < robot_distance < 2 :  # 너무 가깝거나 멀리 있는 로봇은 고려하지 않음
-                repulsion_strength = gain_r * (1/robot_distance - 1/2)**2 * (1/robot_distance**2)
+            if 0 < robot_distance < 5 :  # 너무 가깝거나 멀리 있는 로봇은 고려하지 않음
+                repulsion_strength = gain_r * (1/robot_distance - 1/3)**2 * (1/robot_distance**2)
                 
                 repulsive_force[0] += repulsion_strength * dx / robot_distance
                 repulsive_force[1] += repulsion_strength * dy / robot_distance
