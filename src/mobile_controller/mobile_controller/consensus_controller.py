@@ -69,65 +69,67 @@ class MobileController(Node):
         # 이웃 로봇들의 타겟 정보를 robot_id를 기준으로 저장
         if (msg.robot_id == self.robot_id):
             self.target = msg.state
-        self.get_logger().info(f'Received target: {msg.state}')
+        #self.get_logger().info(f'Received target: {msg.state}')
 
     def control_loop(self):
 
         # 제어 입력을 적용하여 로봇의 속도를 업데이트
         # twist는 로봇 기준 속도 입력 메시지 생성
         cmd_vel = Twist()
-        # 목표 방향 계산 (타겟 방향)
-        target_direction = math.atan2(self.target[1] - self.state[1], self.target[0] - self.state[0])
-    
-        # 목표 방향과 현재 방향 간의 각도 차이 계산
-        angle_to_target = target_direction - self.state[2]
-        angle_to_target = math.atan2(math.sin(angle_to_target), math.cos(angle_to_target))  # 각도 정규화
 
-        # 직진 거리 계산
-        distance_to_target = math.sqrt((self.target[0] - self.state[0]) ** 2 + (self.target[1] - self.state[1]) ** 2)
+        # 목표 거리 계산
+        target_distance = math.sqrt((self.target[0] - self.state[0]) ** 2 + (self.target[1] - self.state[1]) ** 2)
 
         attractive_force = [0.0, 0.0]
         repulsive_force = [0.0, 0.0]
+        gain_a = 1
+        gain_r = 1
 
         # 인력 계산 (목표 지점 방향으로)
-        attraction_strength = np.exp(-distance_to_target)  # 거리가 가까워질수록 인력이 약해짐
-        attractive_force[0] = (self.target[0] - self.state[0]) * attraction_strength
-        attractive_force[1] = (self.target[1] - self.state[1]) * attraction_strength
+        attractive_force[0] = gain_a * (self.target[0] - self.state[0])/target_distance
+        attractive_force[1] = gain_a * (self.target[1] - self.state[1])/target_distance
 
-        # 이웃 로봇에 대한 척력(밀림) 계산
+        # 이웃 로봇에 대한 척력 계산
         for neighbor_id, neighbor_state in self.neighbor_states.items():
             dx = self.state[0] - neighbor_state[0]
             dy = self.state[1] - neighbor_state[1]
-            distance = math.sqrt(dx ** 2 + dy ** 2)
 
-            if distance < 5.0 and distance > 0.1:  # 너무 가깝거나 멀리 있는 로봇은 고려하지 않음
-                repulsion_strength = min(5.0, 1.0 / distance ** 2)  # 거리가 가까울수록 큰 척력 적용
-                repulsive_force[0] += repulsion_strength * dx / distance
-                repulsive_force[1] += repulsion_strength * dy / distance
+            robot_distance = math.sqrt(dx ** 2 + dy ** 2)
 
-        # 최종 제어 입력 계산
+            if 0 < robot_distance < 2 :  # 너무 가깝거나 멀리 있는 로봇은 고려하지 않음
+                repulsion_strength = gain_r * (1/robot_distance - 1/2)**2 * (1/robot_distance**2)
+                
+                repulsive_force[0] += repulsion_strength * dx / robot_distance
+                repulsive_force[1] += repulsion_strength * dy / robot_distance
+
+        # 가상 합력 계산
         total_force = [
             attractive_force[0] + repulsive_force[0],
             attractive_force[1] + repulsive_force[1]
         ]
 
-        # 방향과 속도 설정
+        total_strength = math.sqrt(total_force[1]**2 + total_force[0]**2)
+
+        # 목표 방향 및 각속도 설정 (개선 사항 적용)
         target_direction = math.atan2(total_force[1], total_force[0])
         angle_to_target = target_direction - self.state[2]
-        angle_to_target = math.atan2(math.sin(angle_to_target), math.cos(angle_to_target))
+        angle_to_target = math.atan2(math.sin(angle_to_target), math.cos(angle_to_target))  # 각도 정규화
 
-        linear_velocity = math.sqrt(total_force[0] ** 2 + total_force[1] ** 2)
-        angular_velocity = angle_to_target
+        # 선속도는 목표 거리와 비례하게 설정하고, 각속도는 각도 차이에 비례하도록 설정
+        linear_velocity = min(120, total_strength * math.cos(angle_to_target))  # 거리와 비례
+        angular_velocity = min(2.0, total_strength * math.sin(angle_to_target))  # 각도 차이와 비례
 
         # 목표 지점에 도달했을 때 멈춤
-        if distance_to_target <= 0.1:
+        if target_distance <= 0.1:
             cmd_vel.linear.x = 0.0
             cmd_vel.angular.z = 0.0
         else:
-            cmd_vel.linear.x = min(0.5, linear_velocity)
-            cmd_vel.angular.z = min(2.0, angular_velocity)
+            cmd_vel.linear.x = linear_velocity
+            cmd_vel.angular.z = angular_velocity
 
         self.cmd_vel_publisher.publish(cmd_vel)
+
+        self.get_logger().info(f'Publishing contro: vel = {linear_velocity}, ome={angular_velocity}')
         
         #self.get_logger().info(f'Publishing control x={self.state[0]}, y={self.state[1]}, dis={target_direction}')
 
