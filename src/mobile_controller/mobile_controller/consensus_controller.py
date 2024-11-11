@@ -83,7 +83,7 @@ class MobileController(Node):
         attractive_force = [0.0, 0.0]
         repulsive_force = [0.0, 0.0]
         gain_a = 1
-        gain_r = 1
+        gain_r = 0.5
 
         # 인력 계산 (목표 지점 방향으로)
         attractive_force[0] = gain_a * (self.target[0] - self.state[0])/target_distance
@@ -116,8 +116,9 @@ class MobileController(Node):
         angle_to_target = math.atan2(math.sin(angle_to_target), math.cos(angle_to_target))  # 각도 정규화
 
         # 선속도는 목표 거리와 비례하게 설정하고, 각속도는 각도 차이에 비례하도록 설정
-        linear_velocity = min(120, total_strength * math.cos(angle_to_target))  # 거리와 비례
-        angular_velocity = min(2.0, total_strength * math.sin(angle_to_target))  # 각도 차이와 비례
+        ###########################################   min으로 두니까 음수값이 하늘을 뚫음 + vel이 음수가 나오는데...
+        linear_velocity = np.clip(total_strength * math.cos(angle_to_target), 0.0, 2.0)
+        angular_velocity = np.clip(total_strength * math.sin(angle_to_target), -2.0, 2.0)
 
         # 목표 지점에 도달했을 때 멈춤
         if target_distance <= 0.1:
