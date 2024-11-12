@@ -82,8 +82,8 @@ class MobileController(Node):
 
         attractive_force = [0.0, 0.0]
         repulsive_force = [0.0, 0.0]
-        gain_a = 1
-        gain_r = 1
+        gain_a = 1.0
+        gain_r = 1.5
 
         # 인력 계산 (목표 지점 방향으로)
         attractive_force[0] = gain_a * (self.target[0] - self.state[0])/target_distance
@@ -97,7 +97,7 @@ class MobileController(Node):
             robot_distance = math.sqrt(dx ** 2 + dy ** 2)
 
             if 0 < robot_distance < 5 :  # 너무 가깝거나 멀리 있는 로봇은 고려하지 않음
-                repulsion_strength = gain_r * (1/robot_distance - 1/3)**2 * (1/robot_distance**2)
+                repulsion_strength = gain_r * (1/robot_distance - 1/5)**2 * (1/robot_distance**2)
                 
                 repulsive_force[0] += repulsion_strength * dx / robot_distance
                 repulsive_force[1] += repulsion_strength * dy / robot_distance
@@ -107,6 +107,7 @@ class MobileController(Node):
             attractive_force[0] + repulsive_force[0],
             attractive_force[1] + repulsive_force[1]
         ]
+        self.get_logger().info(f'total force : ({total_force[0]}, {total_force[1]})')
 
         total_strength = math.sqrt(total_force[1]**2 + total_force[0]**2)
 
@@ -130,8 +131,7 @@ class MobileController(Node):
 
         self.cmd_vel_publisher.publish(cmd_vel)
 
-        self.get_logger().info(f'Publishing contro: vel = {linear_velocity}, ome={angular_velocity}')
-        
+        #self.get_logger().info(f'Publishing control: vel = {linear_velocity}, ome={angular_velocity}')
         #self.get_logger().info(f'Publishing control x={self.state[0]}, y={self.state[1]}, dis={target_direction}')
 
 
